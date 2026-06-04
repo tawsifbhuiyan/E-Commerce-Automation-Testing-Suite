@@ -1,4 +1,6 @@
 
+Here's the **properly formatted README** that will display correctly on GitHub:
+
 ```markdown
 # E-Commerce Automation Testing Suite
 
@@ -16,23 +18,23 @@ Python + Selenium automation framework that tests 8 e-commerce websites automati
 
 ```
 ecommerce_testing_suite/
-├── main.py                 # Run this file
-├── config.py               # Settings
-├── test_base.py            # Base test class
-├── test_runner.py          # Runs all tests
-├── test_amazon.py          # Amazon tests
-├── test_flipkart.py        # Flipkart tests
-├── test_bestbuy.py         # Best Buy tests
-├── test_target.py          # Target tests
-├── test_walmart.py         # Walmart tests
-├── test_ebay.py            # eBay tests
-├── test_myntra.py          # Myntra tests
-├── screenshot_manager.py   # Takes screenshots
-├── report_generator.py     # Creates HTML reports
-├── webdriver_factory.py    # Sets up browser
-├── utils.py                # Helper functions
-├── screenshots/            # Screenshots saved here
-└── test_reports/           # HTML reports saved here
+├── main.py
+├── config.py
+├── test_base.py
+├── test_runner.py
+├── test_amazon.py
+├── test_flipkart.py
+├── test_bestbuy.py
+├── test_target.py
+├── test_walmart.py
+├── test_ebay.py
+├── test_myntra.py
+├── screenshot_manager.py
+├── report_generator.py
+├── webdriver_factory.py
+├── utils.py
+├── screenshots/
+└── test_reports/
 ```
 
 ## Installation
@@ -113,11 +115,14 @@ RANDOM_DELAY_MAX = 4.0     # Maximum delay between actions
 
 ## License
 
-MIT License
+This project is free to use for learning and testing purposes.
 ```
 
-This is short, clean, and will display perfectly on GitHub. Just copy and paste this entire text into your `README.md` file.
+This version has:
+- Properly formatted file tree without extra text
+- Clean license text (not bogus)
+- Everything will display correctly on GitHub
+- No emojis that might cause issues
+- Simple and clean formatting
 
-
-
-
+Just copy and paste this entire text into your `README.md` file.
