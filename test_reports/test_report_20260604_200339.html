@@ -1,0 +1,149 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>E-Commerce Automation Test Report</title>
+            <style>
+                * { margin: 0; padding: 0; box-sizing: border-box; }
+                body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; }
+                .container { max-width: 1400px; margin: 0 auto; background: white; border-radius: 15px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+                .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; }
+                .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+                .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 30px; background: #f8f9fa; }
+                .stat-card { background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+                .stat-card .number { font-size: 2.5em; font-weight: bold; }
+                .stat-card .label { color: #666; margin-top: 10px; }
+                .pass-count .number { color: #28a745; }
+                .fail-count .number { color: #dc3545; }
+                .warn-count .number { color: #ffc107; }
+                .results { padding: 30px; }
+                table { width: 100%; border-collapse: collapse; }
+                th, td { padding: 15px; text-align: left; border-bottom: 1px solid #ddd; }
+                th { background: #667eea; color: white; position: sticky; top: 0; }
+                tr:hover { background: #f5f5f5; }
+                .status-badge { padding: 5px 10px; border-radius: 5px; font-weight: bold; display: inline-block; }
+                .status-PASS { background: #d4edda; color: #155724; }
+                .status-FAIL { background: #f8d7da; color: #721c24; }
+                .status-WARNING { background: #fff3cd; color: #856404; }
+                .screenshot-img { max-width: 150px; cursor: pointer; border-radius: 5px; }
+                .timestamp { color: #666; font-size: 0.85em; }
+                @media (max-width: 768px) {
+                    th, td { padding: 8px; font-size: 12px; }
+                    .stats { grid-template-columns: 1fr; }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>🤖 E-Commerce Automation Test Suite</h1>
+                    <p>Generated on 2026-06-04 20:03:39</p>
+                </div>
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="number">8</div>
+                        <div class="label">Total Tests</div>
+                    </div>
+                    <div class="stat-card pass-count">
+                        <div class="number">6</div>
+                        <div class="label">✅ Passed</div>
+                    </div>
+                    <div class="stat-card fail-count">
+                        <div class="number">1</div>
+                        <div class="label">❌ Failed</div>
+                    </div>
+                    <div class="stat-card warn-count">
+                        <div class="number">1</div>
+                        <div class="label">⚠️ Warnings</div>
+                    </div>
+                </div>
+                <div class="results">
+                    <h2>Test Execution Details</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Test Name</th>
+                                <th>Status</th>
+                                <th>Message</th>
+                                <th>Screenshot</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+        
+                            <tr>
+                                <td class="timestamp">2026-06-04 19:58:54</td>
+                                <td><strong>Amazon - Apply Filters</strong></td>
+                                <td><span class="status-badge status-WARNING">WARNING</span></td>
+                                <td>Filter elements not found</td>
+                                <td><img src='screenshots\Amazon - Apply Filters_20260604_195854_861.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 19:59:05</td>
+                                <td><strong>Amazon - Search Products</strong></td>
+                                <td><span class="status-badge status-PASS">PASS</span></td>
+                                <td>Found 22 products for 'laptop backpack'</td>
+                                <td><img src='screenshots\Amazon - Search Products_20260604_195905_377.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 19:59:25</td>
+                                <td><strong>Flipkart - Navigation Menu</strong></td>
+                                <td><span class="status-badge status-PASS">PASS</span></td>
+                                <td>Successfully hovered over Electronics menu</td>
+                                <td><img src='screenshots\Flipkart - Navigation Menu_20260604_195925_168.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 20:01:49</td>
+                                <td><strong>Best Buy - Product Details</strong></td>
+                                <td><span class="status-badge status-FAIL">FAIL</span></td>
+                                <td>Search box not found with any selector</td>
+                                <td><img src='screenshots\Best Buy - Product Details_20260604_200149_680.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 20:02:29</td>
+                                <td><strong>Target - Add to Cart</strong></td>
+                                <td><span class="status-badge status-PASS">PASS</span></td>
+                                <td>Found products for 'water bottle'</td>
+                                <td><img src='screenshots\Target - Add to Cart_20260604_200229_729.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 20:03:07</td>
+                                <td><strong>Walmart - Price Comparison</strong></td>
+                                <td><span class="status-badge status-PASS">PASS</span></td>
+                                <td>Successfully searched and loaded results</td>
+                                <td><img src='screenshots\Walmart - Price Comparison_20260604_200307_092.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 20:03:27</td>
+                                <td><strong>eBay - Infinite Scroll</strong></td>
+                                <td><span class="status-badge status-PASS">PASS</span></td>
+                                <td>Performed 2 scrolls successfully</td>
+                                <td><img src='screenshots\eBay - Infinite Scroll_20260604_200327_308.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 20:03:39</td>
+                                <td><strong>Myntra - Filter Combinations</strong></td>
+                                <td><span class="status-badge status-PASS">PASS</span></td>
+                                <td>Successfully searched for products</td>
+                                <td><img src='screenshots\Myntra - Filter Combinations_20260604_200339_313.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <script>
+                function showImage(src) {
+                    window.open(src, '_blank');
+                }
+            </script>
+        </body>
+        </html>
+        

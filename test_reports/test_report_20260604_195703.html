@@ -1,0 +1,187 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>E-Commerce Automation Test Report</title>
+            <style>
+                * { margin: 0; padding: 0; box-sizing: border-box; }
+                body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; }
+                .container { max-width: 1400px; margin: 0 auto; background: white; border-radius: 15px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+                .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; }
+                .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+                .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 30px; background: #f8f9fa; }
+                .stat-card { background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+                .stat-card .number { font-size: 2.5em; font-weight: bold; }
+                .stat-card .label { color: #666; margin-top: 10px; }
+                .pass-count .number { color: #28a745; }
+                .fail-count .number { color: #dc3545; }
+                .warn-count .number { color: #ffc107; }
+                .results { padding: 30px; }
+                table { width: 100%; border-collapse: collapse; }
+                th, td { padding: 15px; text-align: left; border-bottom: 1px solid #ddd; }
+                th { background: #667eea; color: white; position: sticky; top: 0; }
+                tr:hover { background: #f5f5f5; }
+                .status-badge { padding: 5px 10px; border-radius: 5px; font-weight: bold; display: inline-block; }
+                .status-PASS { background: #d4edda; color: #155724; }
+                .status-FAIL { background: #f8d7da; color: #721c24; }
+                .status-WARNING { background: #fff3cd; color: #856404; }
+                .screenshot-img { max-width: 150px; cursor: pointer; border-radius: 5px; }
+                .timestamp { color: #666; font-size: 0.85em; }
+                @media (max-width: 768px) {
+                    th, td { padding: 8px; font-size: 12px; }
+                    .stats { grid-template-columns: 1fr; }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>🤖 E-Commerce Automation Test Suite</h1>
+                    <p>Generated on 2026-06-04 19:57:03</p>
+                </div>
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="number">8</div>
+                        <div class="label">Total Tests</div>
+                    </div>
+                    <div class="stat-card pass-count">
+                        <div class="number">2</div>
+                        <div class="label">✅ Passed</div>
+                    </div>
+                    <div class="stat-card fail-count">
+                        <div class="number">4</div>
+                        <div class="label">❌ Failed</div>
+                    </div>
+                    <div class="stat-card warn-count">
+                        <div class="number">2</div>
+                        <div class="label">⚠️ Warnings</div>
+                    </div>
+                </div>
+                <div class="results">
+                    <h2>Test Execution Details</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Test Name</th>
+                                <th>Status</th>
+                                <th>Message</th>
+                                <th>Screenshot</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+        
+                            <tr>
+                                <td class="timestamp">2026-06-04 19:52:23</td>
+                                <td><strong>Amazon - Apply Filters</strong></td>
+                                <td><span class="status-badge status-WARNING">WARNING</span></td>
+                                <td>Filter elements not found</td>
+                                <td><img src='screenshots\Amazon - Apply Filters_20260604_195223_324.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 19:52:33</td>
+                                <td><strong>Amazon - Search Products</strong></td>
+                                <td><span class="status-badge status-PASS">PASS</span></td>
+                                <td>Found 16 products for 'laptop backpack'</td>
+                                <td><img src='screenshots\Amazon - Search Products_20260604_195233_770.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 19:52:53</td>
+                                <td><strong>Flipkart - Navigation Menu</strong></td>
+                                <td><span class="status-badge status-PASS">PASS</span></td>
+                                <td>Successfully hovered over Electronics menu</td>
+                                <td><img src='screenshots\Flipkart - Navigation Menu_20260604_195253_753.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 19:55:18</td>
+                                <td><strong>Best Buy - Product Details</strong></td>
+                                <td><span class="status-badge status-FAIL">FAIL</span></td>
+                                <td>Search box not found with any selector</td>
+                                <td><img src='screenshots\Best Buy - Product Details_20260604_195518_327.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 19:56:43</td>
+                                <td><strong>Target - Add to Cart</strong></td>
+                                <td><span class="status-badge status-FAIL">FAIL</span></td>
+                                <td>Search box not found</td>
+                                <td><img src='screenshots\Target - Add to Cart_20260604_195643_230.png' class='screenshot-img' onclick='window.open(this.src)'></td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 19:57:03</td>
+                                <td><strong>Walmart - Price Comparison</strong></td>
+                                <td><span class="status-badge status-WARNING">WARNING</span></td>
+                                <td>Search completed but results page structure may vary</td>
+                                <td>N/A</td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 19:57:03</td>
+                                <td><strong>eBay - Infinite Scroll</strong></td>
+                                <td><span class="status-badge status-FAIL">FAIL</span></td>
+                                <td>Error: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff74c537de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff74c537e50+14900]
+	chromedriver!(No symbol) [0x7ff74c29d396]
+	chromedriver!(No symbol) [0x7ff74c2e8e76]
+	chromedriver!(No symbol) [0x7ff74c31ff62]
+	chromedriver!(No symbol) [0x7ff74c319d7f]
+	chromedriver!(No symbol) [0x7ff74c319543]
+	chromedriver!(No symbol) [0x7ff74c266325]
+	chromedriver!GetHandleVerifier [0x7ff74c84cc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff74c847375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff74c86bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff74c556045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff74c55ecec+3b79c]
+	chromedriver!(No symbol) [0x7ff74c2650bc]
+	chromedriver!GetHandleVerifier [0x7ff74c9b0b18+48d5c8]
+	KERNEL32!BaseThreadInitThunk [0x7ffdb47d259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffdb608af38+28]
+</td>
+                                <td>N/A</td>
+                            </tr>
+            
+                            <tr>
+                                <td class="timestamp">2026-06-04 19:57:03</td>
+                                <td><strong>Myntra - Filter Combinations</strong></td>
+                                <td><span class="status-badge status-FAIL">FAIL</span></td>
+                                <td>Error: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff74c537de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff74c537e50+14900]
+	chromedriver!(No symbol) [0x7ff74c29d396]
+	chromedriver!(No symbol) [0x7ff74c2e8e76]
+	chromedriver!(No symbol) [0x7ff74c31ff62]
+	chromedriver!(No symbol) [0x7ff74c319d7f]
+	chromedriver!(No symbol) [0x7ff74c319543]
+	chromedriver!(No symbol) [0x7ff74c266325]
+	chromedriver!GetHandleVerifier [0x7ff74c84cc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff74c847375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff74c86bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff74c556045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff74c55ecec+3b79c]
+	chromedriver!(No symbol) [0x7ff74c2650bc]
+	chromedriver!GetHandleVerifier [0x7ff74c9b0b18+48d5c8]
+	KERNEL32!BaseThreadInitThunk [0x7ffdb47d259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffdb608af38+28]
+</td>
+                                <td>N/A</td>
+                            </tr>
+            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <script>
+                function showImage(src) {
+                    window.open(src, '_blank');
+                }
+            </script>
+        </body>
+        </html>
+        
