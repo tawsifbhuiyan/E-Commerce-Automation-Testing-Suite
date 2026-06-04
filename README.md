@@ -1,5 +1,5 @@
 
-You're right! The issue is that GitHub README doesn't properly render emojis and complex formatting in some views. Here's a **clean, properly formatted README** that will display perfectly on GitHub:
+
 
 ```markdown
 # E-Commerce Automation Testing Suite
