@@ -3,7 +3,7 @@ Flipkart specific test cases
 """
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
-from test_base import BaseTest
+from scripts.test_base import BaseTest
 
 class FlipkartTests(BaseTest):
     """Test cases for Flipkart website"""

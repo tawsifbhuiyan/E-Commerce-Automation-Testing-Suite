@@ -3,7 +3,7 @@ Amazon specific test cases
 """
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from test_base import BaseTest
+from scripts.test_base import BaseTest
 
 class AmazonTests(BaseTest):
     """Test cases for Amazon website"""

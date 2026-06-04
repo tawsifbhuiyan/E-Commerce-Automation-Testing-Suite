@@ -5,16 +5,16 @@ import sys
 import os
 from selenium.webdriver.chrome.webdriver import WebDriver
 from config import TestConfig
-from webdriver_factory import WebDriverFactory
-from screenshot_manager import ScreenshotManager
-from report_generator import ReportGenerator
-from test_amazon import AmazonTests
-from test_flipkart import FlipkartTests
-from test_bestbuy import BestBuyTests
-from test_target import TargetTests
-from test_walmart import WalmartTests
-from test_ebay import EbayTests
-from test_myntra import MyntraTests
+from scripts.webdriver_factory import WebDriverFactory
+from scripts.screenshot_manager import ScreenshotManager
+from scripts.report_generator import ReportGenerator
+from scripts.test_amazon import AmazonTests
+from scripts.test_flipkart import FlipkartTests
+from scripts.test_bestbuy import BestBuyTests
+from scripts.test_target import TargetTests
+from scripts.test_walmart import WalmartTests
+from scripts.test_ebay import EbayTests
+from scripts.test_myntra import MyntraTests
 
 class TestRunner:
     """Orchestrates execution of all test suites"""

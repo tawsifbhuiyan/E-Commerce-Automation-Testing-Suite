@@ -21,7 +21,7 @@ def main():
     """)
     
     try:
-        from test_runner import TestRunner
+        from scripts.test_runner import TestRunner
         runner = TestRunner()
         
         try:
